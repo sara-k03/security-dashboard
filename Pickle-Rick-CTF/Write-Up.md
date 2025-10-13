@@ -22,7 +22,9 @@ There are other flags that can be tried with nmap. -sV is one of them, so I adde
 These ports were shown: 
 
 PORT   STATE SERVICE VERSION
+
 22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+
 80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
 
 This tells me that I can open the browser and go to the URL http://10.10.173.153. Presumably, I can also do something with ssh, but I'll come back to that later if this doesn't work. 
@@ -56,31 +58,21 @@ This is the command I ran after installing Gobuster:
 
 And this was the result: 
 
-===============================================================
-Gobuster v3.6
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.10.173.153
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.6
-[+] Timeout:                 10s
-===============================================================
-Starting gobuster in directory enumeration mode
-===============================================================
+
 /.hta                 (Status: 403) [Size: 278]
+
 /.htpasswd            (Status: 403) [Size: 278]
+
 /assets               (Status: 301) [Size: 315] [--> http://10.10.173.153/assets/]
+
 /.htaccess            (Status: 403) [Size: 278]
+
 /index.html           (Status: 200) [Size: 1062]
+
 /robots.txt           (Status: 200) [Size: 17]
+
 /server-status        (Status: 403) [Size: 278]
-Progress: 4614 / 4615 (99.98%)
-===============================================================
-Finished
-===============================================================
+
 
 Now, I can try looking through these pages to see if one of them has a login. 
 
