@@ -31,7 +31,7 @@ This tells me that I can open the browser and go to the URL http://10.10.173.153
 
 This URL took me to a website that looked promising. 
 
-![Pickle Rick homepage](image1.png)
+<img src="image1.png" width="100">
 
 I clicked inspect element because that's a standard first-thing-to-do. It showed me a comment saying that the username was: R1ckRul3s
 
@@ -76,13 +76,13 @@ And this was the result:
 
 Now, I can try looking through these pages to see if one of them has a login. 
 
-/.hta --> Forbidden
-/.htpasswd --> Forbidden
-/assets --> Seems to be the images for the site. Might be useful later. 
-/.htaccess --> Forbidden
-/index.html --> The main page 
-/robots.txt --> Already visited this
-/server-status --> Forbidden
+- /.hta --> Forbidden
+- /.htpasswd --> Forbidden
+- /assets --> Seems to be the images for the site. Might be useful later. 
+- /.htaccess --> Forbidden
+- /index.html --> The main page 
+- /robots.txt --> Already visited this
+- /server-status --> Forbidden
 
 Going back to the images...
 
@@ -94,7 +94,7 @@ This didn't give me any other directories either.
 
 I kind of just cheated at this point and went to portal.php because that's what the internet said to do next for this CTF. 
 
-![Pickle Rick login](image2.png)
+<img src="image2.png" width="100">
 
 Well, I have to stop here. It's been an hour and apparently, that's TryHackMe's daily limit for free users. While I didn't get to finish this CTF, I learned about gobuster, inspect element, robot.txt, and how to get a CTF started. 
 
