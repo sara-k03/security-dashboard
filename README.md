@@ -12,3 +12,7 @@ Downloaded the an ISO image from here to start: https://ubuntu.com/download/desk
 A packet sniffer is a program that monitors packets flowing across a network, allowing users to view network traffic and diagnose issues
 
 The packet sniffer program is under the 'Packet-Sniffer' folder. 
+
+## Pickle Rick CTF
+
+A beginner CTF on TryHackMe: https://tryhackme.com/room/picklerick?ref=blog.tryhackme.com 
