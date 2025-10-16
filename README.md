@@ -13,6 +13,8 @@ A packet sniffer is a program that monitors packets flowing across a network, al
 
 The packet sniffer program is under the 'Packet-Sniffer' folder. 
 
+Note: This program only runs on Linux. 
+
 ## Pickle Rick CTF
 
 A beginner CTF on TryHackMe: https://tryhackme.com/room/picklerick?ref=blog.tryhackme.com 

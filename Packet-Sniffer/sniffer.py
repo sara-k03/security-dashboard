@@ -2,7 +2,17 @@ import socket
 import struct
 import textwrap
 
-# Start up with part 3
+# Loop to listen for packets
+def main():
+    # to connect with other computers
+    connection = socket.socket( socket.AF_PACKET, socket.SOCKET_RAW, socket.ntohs( 3 ) ) 
+    
+    while True: # Going to keep looping and listening for any data that comes across
+        raw_data, addr = connection.recvfrom( 65536 )
+        dest_mac, src_mac, eth_proto, data = ethernet_frame( raw_data )
+        print( '\nEthernet Frame: ' )
+        print( 'Destination: {}, Source: {}, Protocol: {}'.format( dest_mac, src_mac, eth_proto ) )
+ 
 
 # Unpack ethernet frame (sender, receiver, data, etc)
 def ethernet_frame( data ):
@@ -19,3 +29,5 @@ def get_mac_address( bytes_addr ):
     bytes_str = map( '{:02x}'.format, bytes_addr )
     mac_addr = ':'.join( bytes_str ).upper() 
     return mac_addr
+
+main()
