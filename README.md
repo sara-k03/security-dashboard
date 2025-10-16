@@ -11,9 +11,15 @@ Downloaded the an ISO image from here to start: https://ubuntu.com/download/desk
 
 A packet sniffer is a program that monitors packets flowing across a network, allowing users to view network traffic and diagnose issues
 
-The packet sniffer program is under the 'Packet-Sniffer' folder. 
+Originally, I was following a tutorial to build the packet sniffer, but it turned out that tutorial's approach only worked for Linux. This file is sniffer-linux-incomplete.py. I didn't finish it. 
 
-Note: This program only runs on Linux. 
+The packet sniffer I developed should be OS-agnostic, but I know for a fact it works on MacOS. 
+
+To run, navigate into the Packet-Sniffer directory and run the following command: 
+
+```console
+sudo python3 sniffer.py
+```
 
 ## Pickle Rick CTF
 
