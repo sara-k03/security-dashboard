@@ -21,6 +21,12 @@ To run, navigate into the Packet-Sniffer directory and run the following command
 sudo python3 sniffer.py
 ```
 
+## Port Scanner 
+
+A port scanner is a software tool that probes a server or network to identify open ports, which are endpoints for network communication. 
+
+MORE DETAILS TBA
+
 ## Practice CTFs
 
 ### Pickle Rick CTF
