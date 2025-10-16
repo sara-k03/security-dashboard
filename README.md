@@ -21,6 +21,8 @@ To run, navigate into the Packet-Sniffer directory and run the following command
 sudo python3 sniffer.py
 ```
 
-## Pickle Rick CTF
+## Practice CTFs
+
+### Pickle Rick CTF
 
 A beginner CTF on TryHackMe: https://tryhackme.com/room/picklerick?ref=blog.tryhackme.com 
