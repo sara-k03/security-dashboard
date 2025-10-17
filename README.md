@@ -32,3 +32,7 @@ MORE DETAILS TBA
 ### Pickle Rick CTF
 
 A beginner CTF on TryHackMe: https://tryhackme.com/room/picklerick?ref=blog.tryhackme.com 
+
+### PicoCTF SSTI1 
+
+A beginner CTF on PicoCTF: https://play.picoctf.org/practice/challenge/492?category=1&difficulty=1&page=1 
